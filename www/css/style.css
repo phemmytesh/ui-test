@@ -1,0 +1,263 @@
+/* 
+* Task A - Main Style Section
+* Task B - See Responsive from line 147
+*/
+
+body {
+    margin: 0;
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #919191;
+    background-color: #fff7e6;
+  }
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffbc36;
+}
+
+header > .left-wing {
+    width: 25%;
+    text-align: left;
+    padding: 20px 0 20px 5%;
+    font-weight: bolder;
+    font-size: large;
+    color: #ffffff;
+    text-shadow: 2px 2px #666666;
+}
+
+header > .right-wing {
+    width: 65%;
+    text-align: right;
+    padding: 20px 5% 20px 0;
+    font-size: large;
+    color: #ffffff;
+    text-shadow: 2px 2px #666666;
+    text-transform: capitalize;
+}
+
+.logo {
+    margin-top: -45px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo > img {
+    height: 90px;
+}
+
+.clearfix {
+    width: 100%;
+    display: block;
+    height: 30px;
+}
+
+.hr {
+    margin: 0 auto;
+    padding: 0 13%;
+}
+
+.slogan {
+    margin: 0 auto;
+    margin-top: -22px;
+    width: 200px;
+    color: 333333;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: fff7e6;
+    letter-spacing: 2px;
+    font-size: large;
+}
+
+.container {
+    background-color: #ffffff;
+    position: relative;
+    margin: 0 10%;
+    display: flex;
+    padding: 30px 0 30px 3%;
+    box-shadow: 7px 7px #ede6d5;
+    cursor: pointer;
+}
+
+.fruit {
+    float: left;
+    max-width: 30%;
+}
+
+.fruit > img {
+    width: 110px;
+}
+
+.detail {
+    float: left;
+    padding: 0 10% 0 3%;
+    width: 90%;
+}
+
+.detail > .title {  
+    margin: 0 0 15px 10px;
+}
+
+.detail > .title > span {
+    color: #333333;
+    font-weight: bold;
+}
+
+.detail > .body {  
+    margin: 0 0 15px 25px;
+    font-size: smaller;
+}
+
+.price-banner {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 15;
+}
+
+.price-banner > .triangle {
+    width: 50px;
+    height: 37px;
+    background-image:
+      linear-gradient(to top right, transparent 50%, #8dcc4e 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    margin-right: -26px;
+}
+
+.price-banner > .price {
+    background-color: #8dcc4e;
+    color: #ffffff;
+    text-shadow: 2px 2px #666666;
+    padding: 8px 20px 5px 10px;
+    letter-spacing: 1px;
+}
+
+.price-banner > .price > span {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Task B - Responsive to portrait- and landscape-oriented mobile screens */
+
+@media (max-width: 812px) {
+    
+    header {
+        display: block;
+    }
+    
+    header > .left-wing {
+        width: 100%;
+        padding: 20px 0 0 5%;
+    }
+    
+    header > .right-wing {
+        width: 100%;
+        text-align: left;
+        padding: 0 0 20px 5%;
+        font-size: small;
+    }
+    
+    .logo {
+        width: 95%;
+        text-align: right;
+    }
+    
+    .logo > img {
+        height: 90px;
+    }
+
+    .hr {
+        margin: 0;
+        padding: 0 5%;
+    }    
+
+    .slogan {
+        margin: -22px 0 0 5%;
+        text-align: left;
+        width: 150px;
+    }
+
+    .container {
+        margin: 0 5%;
+        box-shadow: 5px 5px #ede6d5;
+    }
+
+    .detail > .title {  
+        margin: 0 0 15px 0;
+        font-size: small;
+    }
+    
+    .detail > .title > span {
+        display: block;
+        font-size: medium;
+    }
+    
+    .detail > .body {  
+        margin: 0 0 15px 0;
+    }
+
+    .price-banner {
+        top: 30;
+    }
+                
+}
+
+/* Task C2 - Modal */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: black;
+    display: flex;
+    opacity: 0.8;
+    visibility: hidden;
+  }
+
+  .modal {
+    margin: auto;
+    max-width: 320px;
+    background-color: white;
+    border-radius: 1.5rem;
+    opacity: 1;
+    visibility: hidden;
+    padding: 20px;
+  }
+
+  .modal-container.active {
+    visibility: visible;
+  }
+
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+    color: #000000;
+  }
+
+  .modal-container > .modal > #head {
+    margin-bottom: 15px;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .modal-container > .modal > button {
+    margin-top: 15px;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #8dcc4e;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+
+
+  
+
+
