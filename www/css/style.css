@@ -247,6 +247,15 @@ header > .right-wing {
     font-weight: bold;
   }
 
+  .modal-container > .modal > #amount {
+    font-size: larger;
+    font-weight: bold;
+    color: #ff0000;
+    letter-spacing: 2px;
+    display: inline;
+    margin-right: 20px;
+  }
+
   .modal-container > .modal > button {
     margin-top: 15px;
     color: #000000;

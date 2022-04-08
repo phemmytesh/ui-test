@@ -9,6 +9,7 @@ $(document).ready(function() {
         $('#head').html($('#mango-title').text());
         $('#image').html('<img src="img/mangoes.png" height="100px" alt="Mangoes" style="float: right" />');
         $('#torso').html($('#mango-body').text());
+        $('#amount').html($('#mango-price').text());
     });
 
     $("#strawberry").on("click", function() {
@@ -16,6 +17,7 @@ $(document).ready(function() {
         $('#head').html($('#strawberry-title').text());
         $('#image').html('<img src="img/strawberries.png" height="100px" alt="Strawberries" style="float: right" />');
         $('#torso').html($('#strawberry-body').text());
+        $('#amount').html($('#strawberry-price').text());
     });
 
     $("#guava").on("click", function() {
@@ -23,6 +25,7 @@ $(document).ready(function() {
         $('#head').html($('#guava-title').text());
         $('#image').html('<img src="img/guavas.png" height="100px" alt="Guavas" style="float: right" />');
         $('#torso').html($('#guava-body').text());
+        $('#amount').html($('#guava-price').text());
     });
 
     $("button").on("click", function() {
@@ -30,6 +33,7 @@ $(document).ready(function() {
         $('#head').html('');
         $('#image').html('');
         $('#torso').html('');
+        $('#amount').html('');
     });
 
 });
